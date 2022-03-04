@@ -1,0 +1,8 @@
+ARG VERSION=v1.6.1
+
+FROM golang:1.17
+#ARG VERSION
+
+WORKDIR /
+
+RUN echo "My kyverno version: $VERSION"
