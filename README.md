@@ -43,7 +43,7 @@ Step 3/4 : WORKDIR /
  ---> Running in d602e74033f5
 Removing intermediate container d602e74033f5
  ---> 59b28e6e8134
-Step 4/4 : RUN echo "My kyverno version: $VERSION"
+Step 4/4 : RUN echo "My version: $VERSION"
  ---> Running in 763453b4e253
 My version: # <---------- No version output!
 Removing intermediate container 763453b4e253
