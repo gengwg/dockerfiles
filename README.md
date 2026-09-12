@@ -23,7 +23,7 @@ Before (comment out ARG line):
 $ cat Dockerfile
 ARG VERSION=v1.6.1
 
-FROM golang:1.17
+FROM golang:1.27
 #ARG VERSION
 
 WORKDIR /
@@ -37,7 +37,7 @@ Build:
 $ docker build -t testarg . --no-cache
 Sending build context to Docker daemon  161.8MB
 Step 1/4 : ARG VERSION=v1.6.1
-Step 2/4 : FROM golang:1.17
+Step 2/4 : FROM golang:1.27
  ---> 0659a535a734
 Step 3/4 : WORKDIR /
  ---> Running in d602e74033f5
@@ -59,7 +59,7 @@ $ vim Dockerfile
 $ cat Dockerfile
 ARG VERSION=v1.6.1
 
-FROM golang:1.17
+FROM golang:1.27
 ARG VERSION
 
 WORKDIR /
@@ -83,7 +83,7 @@ Another way is simply put ARGs after FROM, if you don't use the ARG in the FROM 
 
 ```
 $ cat Dockerfile
-FROM golang:1.17
+FROM golang:1.27
 ARG VERSION=v1.6.1
 
 WORKDIR /
